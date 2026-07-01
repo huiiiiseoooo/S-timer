@@ -1,0 +1,24 @@
+# macOS
+.DS_Store
+
+# IntelliJ
+.idea/
+*.iml
+
+# Gradle
+.gradle/
+build/
+backend/.gradle/
+backend/build/
+
+# Java
+*.class
+
+# Node / React
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+frontend/*.local
+
+# Logs
+*.log
