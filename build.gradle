@@ -19,6 +19,17 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-webmvc'
+	// 의존성 추가
+	// 1번째는 하나하나 SQL안써도 DB에 코드가 연결되게 하는 라이브러리
+	// 2번째는 회원가입할때 요청값 검증하기 위한 라이브러리
+	// 3번째는 비밀번호 암호화하고 인증 처리를 위한 라이브러리
+	// 4번째는 스프링부트랑 MYSQL 연결하는 드라이버
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
+	implementation 'org.springframework.boot:spring-boot-starter-security'
+
+	runtimeOnly 'com.mysql:mysql-connector-j'
+
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-webmvc-test'
